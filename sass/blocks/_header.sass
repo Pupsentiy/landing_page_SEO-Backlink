@@ -1,0 +1,50 @@
+.header
+  position: relative
+  z-index: 10
+.navbar
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: end
+    padding-top: 35px
+
+  .navbar-menu
+    border-right: 1px solid $white
+    &__link
+      margin-right: 25px
+      color: $white
+      +boldRaleway
+      font-size: 10px
+      line-height: 174.69%
+      padding-bottom: 5px
+      &:hover
+        border-bottom: 1px solid $green
+
+  &-btn
+    .button-sign-up
+      background: transparent
+      border: 1px solid $white
+      border-radius: 50px
+      padding: 7px 22px
+      font-size: 10px
+      line-height: 174.69%
+      color: $white
+      +boldRaleway
+      cursor: pointer
+      &:hover
+        border: 1px solid $green
+
+    .button-sign-in
+      background: transparent
+      border: none
+      margin-right: 5px
+      padding: 7px 22px
+      > a
+        font-size: 10px
+        line-height: 174.69%
+        color: $white
+        +boldRaleway
+        cursor: pointer
+        padding-bottom: 5px
+        &:hover
+          border-bottom: 1px solid $green
