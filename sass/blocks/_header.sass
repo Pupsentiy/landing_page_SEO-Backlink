@@ -7,7 +7,16 @@
     align-items: center
     justify-content: end
     padding-top: 35px
-
+    .menu-button
+      background: transparent
+      border: none
+      &__line
+        display: block
+        width: 30px
+        height: 3px
+        background: $white
+        margin: 3px 0
+        border-radius: 10px
   .navbar-menu
     border-right: 1px solid $white
     &__link
@@ -17,8 +26,27 @@
       font-size: 10px
       line-height: 174.69%
       padding-bottom: 5px
+      position: relative
+      -webkit-transition: all .5s ease
+      -o-transition: all .5s ease
+      transition: all .5s ease
+      &::after
+        position: absolute
+        bottom: 0
+        left: 0
+        content: ''
+        width: 0
+        height: 1px
+        background-color: $green
       &:hover
-        border-bottom: 1px solid $green
+        &::after
+          position: absolute
+          bottom: 0
+          left: 0
+          content: ''
+          width: 100%
+          height: 1px
+          background-color: $green
 
   &-btn
     .button-sign-up
